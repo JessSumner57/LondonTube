@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09ff065d1194a2f81cb3009e0e222793 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_09ff065d1194a2f81cb3009e0e222793" ></div>
+        
+</body>
+<script>    
+    
+            var map_09ff065d1194a2f81cb3009e0e222793 = L.map(
+                "map_09ff065d1194a2f81cb3009e0e222793",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6a621a64e0b9f15755dbf888f79c371 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var marker_685c8c2bbbaf89e100314f26934e4fa1 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_ba01b231014467fbbe6ad233f09ff987 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_685c8c2bbbaf89e100314f26934e4fa1.setIcon(icon_ba01b231014467fbbe6ad233f09ff987);
+        
+    
+        var popup_4690ebe485e4bae152cd94dea62485bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26b1eb0f9c2689c48acf9697821e7da6 = $(`<div id="html_26b1eb0f9c2689c48acf9697821e7da6" style="width: 100.0%; height: 100.0%;">Bakerloo: Part Closure</div>`)[0];
+                popup_4690ebe485e4bae152cd94dea62485bd.setContent(html_26b1eb0f9c2689c48acf9697821e7da6);
+            
+        
+
+        marker_685c8c2bbbaf89e100314f26934e4fa1.bindPopup(popup_4690ebe485e4bae152cd94dea62485bd)
+        ;
+
+        
+    
+    
+            var marker_3e91da3e0db1e5a7fc0778e18b1a26db = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_3f5394b46e16514ec4cef35a40827f7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e91da3e0db1e5a7fc0778e18b1a26db.setIcon(icon_3f5394b46e16514ec4cef35a40827f7d);
+        
+    
+        var popup_89918d8ad6f74f3c0263e49e36e0096e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_451bd710dc85f6e86e793b8b09442ef0 = $(`<div id="html_451bd710dc85f6e86e793b8b09442ef0" style="width: 100.0%; height: 100.0%;">Central: Good Service</div>`)[0];
+                popup_89918d8ad6f74f3c0263e49e36e0096e.setContent(html_451bd710dc85f6e86e793b8b09442ef0);
+            
+        
+
+        marker_3e91da3e0db1e5a7fc0778e18b1a26db.bindPopup(popup_89918d8ad6f74f3c0263e49e36e0096e)
+        ;
+
+        
+    
+    
+            var marker_6a261f36b98ca69f32960c336f42582d = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_847061ffedd5f2eaba94bd4b85aebdb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a261f36b98ca69f32960c336f42582d.setIcon(icon_847061ffedd5f2eaba94bd4b85aebdb3);
+        
+    
+        var popup_67c8433ca175419a4859de7de764306a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02f7ef653d18305c2f19252addfbeaf9 = $(`<div id="html_02f7ef653d18305c2f19252addfbeaf9" style="width: 100.0%; height: 100.0%;">Circle: Good Service</div>`)[0];
+                popup_67c8433ca175419a4859de7de764306a.setContent(html_02f7ef653d18305c2f19252addfbeaf9);
+            
+        
+
+        marker_6a261f36b98ca69f32960c336f42582d.bindPopup(popup_67c8433ca175419a4859de7de764306a)
+        ;
+
+        
+    
+    
+            var marker_3126f29874c7b42c363d386dcbd72dd3 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_d7b93f2ee9005e58ed292c62748d3101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3126f29874c7b42c363d386dcbd72dd3.setIcon(icon_d7b93f2ee9005e58ed292c62748d3101);
+        
+    
+        var popup_3204f32bb46824cfe0254f3212e5ea86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e756be423651b9835390e096ee0f3dbd = $(`<div id="html_e756be423651b9835390e096ee0f3dbd" style="width: 100.0%; height: 100.0%;">District: Good Service</div>`)[0];
+                popup_3204f32bb46824cfe0254f3212e5ea86.setContent(html_e756be423651b9835390e096ee0f3dbd);
+            
+        
+
+        marker_3126f29874c7b42c363d386dcbd72dd3.bindPopup(popup_3204f32bb46824cfe0254f3212e5ea86)
+        ;
+
+        
+    
+    
+            var marker_57385cd7eb35aa0aba38fd2b477dc8ac = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_5d40381d99df1cf8fe963aab01c99931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_57385cd7eb35aa0aba38fd2b477dc8ac.setIcon(icon_5d40381d99df1cf8fe963aab01c99931);
+        
+    
+        var popup_84930f74958319261fa37aa344590e28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e47ec5751bde5460c3367bfce95e2ff3 = $(`<div id="html_e47ec5751bde5460c3367bfce95e2ff3" style="width: 100.0%; height: 100.0%;">Hammersmith & City: Good Service</div>`)[0];
+                popup_84930f74958319261fa37aa344590e28.setContent(html_e47ec5751bde5460c3367bfce95e2ff3);
+            
+        
+
+        marker_57385cd7eb35aa0aba38fd2b477dc8ac.bindPopup(popup_84930f74958319261fa37aa344590e28)
+        ;
+
+        
+    
+    
+            var marker_dc11d857ebd64f864a5c7c1e1b31d3ca = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_c8ebdf2563521aea7b5128672392537b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc11d857ebd64f864a5c7c1e1b31d3ca.setIcon(icon_c8ebdf2563521aea7b5128672392537b);
+        
+    
+        var popup_0d6001d461d2ef3b681e65a32944a38f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7e6cc3fb6620ca5c6a624a1ca0dea2d = $(`<div id="html_e7e6cc3fb6620ca5c6a624a1ca0dea2d" style="width: 100.0%; height: 100.0%;">Jubilee: Minor Delays</div>`)[0];
+                popup_0d6001d461d2ef3b681e65a32944a38f.setContent(html_e7e6cc3fb6620ca5c6a624a1ca0dea2d);
+            
+        
+
+        marker_dc11d857ebd64f864a5c7c1e1b31d3ca.bindPopup(popup_0d6001d461d2ef3b681e65a32944a38f)
+        ;
+
+        
+    
+    
+            var marker_396e4fd507ae2516ebfa476ece6b3904 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_1ea1532a6ada524d858e646c7a3a357f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_396e4fd507ae2516ebfa476ece6b3904.setIcon(icon_1ea1532a6ada524d858e646c7a3a357f);
+        
+    
+        var popup_95ad07f7176ea7e4927c999b877dce2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_433d3c8faf765977913a8a0331d876e0 = $(`<div id="html_433d3c8faf765977913a8a0331d876e0" style="width: 100.0%; height: 100.0%;">Metropolitan: Part Closure</div>`)[0];
+                popup_95ad07f7176ea7e4927c999b877dce2b.setContent(html_433d3c8faf765977913a8a0331d876e0);
+            
+        
+
+        marker_396e4fd507ae2516ebfa476ece6b3904.bindPopup(popup_95ad07f7176ea7e4927c999b877dce2b)
+        ;
+
+        
+    
+    
+            var marker_9d4ec5d77793be07a88d9b7cbfb96317 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_373575c0251bba956e0bcb25c168e1ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d4ec5d77793be07a88d9b7cbfb96317.setIcon(icon_373575c0251bba956e0bcb25c168e1ef);
+        
+    
+        var popup_0947d5a5bcc4ce7cb66a36235bd1f21c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f04e3ddd1d5ad58a6efff2c13b2b0be3 = $(`<div id="html_f04e3ddd1d5ad58a6efff2c13b2b0be3" style="width: 100.0%; height: 100.0%;">Northern: Good Service</div>`)[0];
+                popup_0947d5a5bcc4ce7cb66a36235bd1f21c.setContent(html_f04e3ddd1d5ad58a6efff2c13b2b0be3);
+            
+        
+
+        marker_9d4ec5d77793be07a88d9b7cbfb96317.bindPopup(popup_0947d5a5bcc4ce7cb66a36235bd1f21c)
+        ;
+
+        
+    
+    
+            var marker_a99c2099f235b1927d90ac9650a03806 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_2463fc887f3cebac55fd02a2429bad02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a99c2099f235b1927d90ac9650a03806.setIcon(icon_2463fc887f3cebac55fd02a2429bad02);
+        
+    
+        var popup_0110de0b1ab68fadd34448a57ba7c53f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c49414c7e261d3bdb877cabc01e06652 = $(`<div id="html_c49414c7e261d3bdb877cabc01e06652" style="width: 100.0%; height: 100.0%;">Piccadilly: Part Closure</div>`)[0];
+                popup_0110de0b1ab68fadd34448a57ba7c53f.setContent(html_c49414c7e261d3bdb877cabc01e06652);
+            
+        
+
+        marker_a99c2099f235b1927d90ac9650a03806.bindPopup(popup_0110de0b1ab68fadd34448a57ba7c53f)
+        ;
+
+        
+    
+    
+            var marker_c3046021c081cbfd035dce2dfe63dcd8 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_4e4899a90c735e435ef093581b5d8e56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c3046021c081cbfd035dce2dfe63dcd8.setIcon(icon_4e4899a90c735e435ef093581b5d8e56);
+        
+    
+        var popup_5d06afd2113af47ca283a53a2cd8a7bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_599790dadee58c6b23e59a187746150c = $(`<div id="html_599790dadee58c6b23e59a187746150c" style="width: 100.0%; height: 100.0%;">Victoria: Good Service</div>`)[0];
+                popup_5d06afd2113af47ca283a53a2cd8a7bb.setContent(html_599790dadee58c6b23e59a187746150c);
+            
+        
+
+        marker_c3046021c081cbfd035dce2dfe63dcd8.bindPopup(popup_5d06afd2113af47ca283a53a2cd8a7bb)
+        ;
+
+        
+    
+    
+            var marker_01ab1ce2625f5d5b84eb1c79e01ca015 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_09ff065d1194a2f81cb3009e0e222793);
+        
+    
+            var icon_4b91e38cf09a1ca87b12a461500c0ea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01ab1ce2625f5d5b84eb1c79e01ca015.setIcon(icon_4b91e38cf09a1ca87b12a461500c0ea7);
+        
+    
+        var popup_07458660e9f96ac3be13988b30749b35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e16b6274d546ce0a1d5267e42aac0b0d = $(`<div id="html_e16b6274d546ce0a1d5267e42aac0b0d" style="width: 100.0%; height: 100.0%;">Waterloo & City: Planned Closure</div>`)[0];
+                popup_07458660e9f96ac3be13988b30749b35.setContent(html_e16b6274d546ce0a1d5267e42aac0b0d);
+            
+        
+
+        marker_01ab1ce2625f5d5b84eb1c79e01ca015.bindPopup(popup_07458660e9f96ac3be13988b30749b35)
+        ;
+
+        
+    
+</script>
